@@ -1,0 +1,44 @@
+:root {
+    --padding: 0;
+    --blur: 0;
+    --color: #000000;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+}
+h1 {
+    font-size: 30px;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 40px;
+}
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+li {
+    padding: 0 20px;
+}
+.img-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+img {
+    width: 40%;
+    height: auto;
+    padding: var(--padding);
+    background: var(--color);
+    filter: blur(var(--blur));
+}
+.emphasis {
+    color: var(--color);
+}
